@@ -1,0 +1,67 @@
+<!-- хедэр -->
+<header>
+    <a href="#">
+        <img src="./images/logo.png" alt="лого">
+    </a>
+    <button type="button" class="menu-btn">
+        <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/icons.svg#cross"></use>
+            <use class="icon-burger" href="./images/icons.svg#burger"></use>
+        </svg>
+    </button>
+    <nav data-menu>
+        <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#how-its-made">How it’s made?</a></li>
+            <li><a href="#products">Our products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <button type="button"data-modal-open class="btn">Buy now</button>
+</header>
+
+<!-- модалка -->
+<div data-modal class="backdrop backdrop--is-hidden">
+    <div class="modal">
+        <button type="button" data-modal-close class="modal__closebtn"></button>
+        <p class="modal__title"></p>
+        <form action="" class="modal__form"></form>
+    </div>
+</div>
+
+<!-- секция герой -->
+<section>
+    <div>
+        <h1>Ice cream made with <span>passion</span> </h1>
+        <div>
+            <ul>
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+                <li>
+                    <a href="#how-its-made">How it’s made?</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur vel aut magni optio delectus. </p>
+            <button>
+                <svg class="arrow">
+                    <use class="icon-arrow-right" width="26" height="26" href="./images/icons.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- объекты компании -->
+    <aside>
+        <ul>
+            <li><span>16</span>cafes</li>
+            <li><span>23</span>food trucks</li>
+        </ul>
+    </aside>
+    <!-- картинки -->
+    <div>
+        
+    </div>
+</section>
