@@ -1,6 +1,9 @@
 .about {
-  padding-bottom: 40px;
   background-color: var(--linear-gradient);
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 40px;
+  }
 }
 
 .about__label {
@@ -13,6 +16,12 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--text-lable-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .about__title {
@@ -25,11 +34,23 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--text-btn-accent-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
 }
 
 .about__img {
   display: block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
 }
 
 .about__text {
@@ -42,6 +63,14 @@
   line-height: 1.62;
   color: var(--text-about-color);
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    padding-top: 0;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/sectionbg1_320.png);
     background-repeat: no-repeat;
@@ -66,6 +95,16 @@
 .about__text--black {
   margin-bottom: 20px;
   color: var(--text-primery-color);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 23px;
+    letter-spacing: normal;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.76;
+    letter-spacing: 0.04;
+  }
 }
 .about__button {
   display: flex;
@@ -81,13 +120,27 @@
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   text-align: center;
 
   color: var(--text-btn-accent-color);
 
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31px;
+  }
+
   &:hover,
   &:focus {
-    background: #ecebeb;
+    background: var(--bg-btn-hover);
   }
+}
+.about__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.vector {
+  stroke: var(--text-btn-accent-color);
+  fill: none;
 }
