@@ -11,6 +11,13 @@
   text-transform: uppercase;
 
   max-width: 234px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+
+    max-width: 340px;
+  }
 }
 
 .footer__sublogo {
@@ -19,6 +26,13 @@
   line-height: 1.17;
 
   padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    letter-spacing: 0.04em;
+
+    padding-bottom: 12px;
+  }
 }
 
 .footer__address {
@@ -26,6 +40,10 @@
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
 .footer__tel {
@@ -36,6 +54,10 @@
   border-top: 1px solid var(--border-line-color);
 
   padding-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding: 8px;
+  }
 }
 
 .footer__copyright {
@@ -48,4 +70,11 @@
   margin: auto;
 
   max-width: 150px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 280px;
+
+    letter-spacing: 0.02em;
+    line-height: 1.86;
+  }
 }

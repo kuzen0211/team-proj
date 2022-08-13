@@ -11,14 +11,12 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding-right: 16px;
-    padding-left: 16px;
   }
 }
 
@@ -29,9 +27,14 @@
 }
 
 .section-footer {
-  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 60px;
