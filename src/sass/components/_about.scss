@@ -29,11 +29,12 @@
 
 .about__img {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .about__text {
   margin-bottom: 20px;
+  padding-top: 20px;
   padding-right: 60px;
 
   font-weight: 500;
@@ -63,7 +64,7 @@
 }
 
 .about__text--black {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: var(--text-primery-color);
 }
 .about__button {
