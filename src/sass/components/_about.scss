@@ -1,0 +1,92 @@
+.about {
+  padding-bottom: 40px;
+  background-color: var(--linear-gradient);
+}
+
+.about__label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.167;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-lable-color);
+}
+
+.about__title {
+  margin-bottom: 32px;
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-btn-accent-color);
+}
+
+.about__img {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  margin-bottom: 20px;
+  padding-right: 60px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--text-about-color);
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/sectionbg1_320.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/about/sectionbg1_320@2x.png');
+    }
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 288dpi),
+      (min-resolution: 3dppx) {
+      background-image: url('../images/about/sectionbg1_320@3x.png');
+    }
+  }
+}
+
+.about__text--black {
+  margin-bottom: 40px;
+  color: var(--text-primery-color);
+}
+.about__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 37px;
+  width: 176px;
+  height: 44px;
+  border-radius: 22px;
+  border: transparent;
+  background: var(--bg-primery-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: var(--text-btn-accent-color);
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+}
