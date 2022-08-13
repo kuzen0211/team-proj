@@ -1,9 +1,26 @@
 .social-links {
   display: flex;
+  justify-content: end;
+  gap: 28px;
+
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .social-links__item {
-  width: 40px;
+}
+
+.social-links__link {
+  display: flex;
+
+  color: var(--icon-color);
+  background-color: var(--bg-icon-accent-color);
+  border-radius: 50%;
+
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-icon-hover-color);
+  }
 }
