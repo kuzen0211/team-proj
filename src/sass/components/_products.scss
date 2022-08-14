@@ -25,11 +25,36 @@
     flex-wrap: wrap; 
 
 }
-
-.products__img{
+.products__section-cream::before{
+    content:url("/src/images/products/products-cream-mobile.png");
     text-align: center;
+    }
 
-}
+.products__section-coffee::before{
+    content:url("/src/images/products/products-coffee-mobile.png");
+    text-align: center;
+    }
+
+.products__section-milk::before{
+    content:url("/src/images/products/products-milk-mobile.png");
+    text-align: center;
+    }  
+
+// .products__img-cream::before{
+//     content:url("/src/images/products/products-cream-mobile.png");
+//     text-align: center;
+//     }
+
+// .products__img-coffee::before{
+//     content:url("/src/images/products/products-coffee-mobile.png");
+//     text-align: center;
+//     }
+
+// .products__img-milk::before{
+//     content:url("/src/images/products/products-milk-mobile.png");
+//     text-align: center;
+
+// }
 
 .products__input{
     margin-top: -140px;
@@ -62,14 +87,6 @@
     text-transform: uppercase;
     color: var(--text-secondary-color);
 
-    &::after{
-        content: url("/src/images/products/pseudo-element.svg") 
-        +url("/src/images/products/pseudo-element.svg") 
-        +url("/src/images/products/pseudo-element.svg");
-        display: block;
-        margin: 32px;
-
-    }
 }
    
 .products__title-text{
@@ -82,6 +99,13 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--text-secondary-color);
+
+    &:before{
+        content:url("/src/images/products/pseudo-element-group.svg");
+        display: block;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
 }
 
 .products__btn{
