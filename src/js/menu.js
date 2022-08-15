@@ -16,8 +16,8 @@
 
 // (() => {
 //   const refs = {
-//     openMenuBtn: document.querySelector('.menu-open-btn'),
-//     closeMenuBtn: document.querySelector('.menu-close-btn'),
+//     openMenuBtn: document.querySelector('.menu__open-btn'),
+//     closeMenuBtn: document.querySelector('.menu__close-btn'),
 //     menu: document.querySelector('.mob-menu'),
 //     body: document.querySelector('body'),
 //   };
