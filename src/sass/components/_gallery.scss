@@ -5,15 +5,15 @@
     padding-bottom: 30px;
     
     @media screen and (max-width:767px){
-        max-width: 320px; 
+        width: 320px; 
         height: 136px; 
     }
     @media screen and (min-width:768px){
-        max-width: 768px;
+        width: 768px;
         height: 326px; 
     }
     @media screen and (min-width:1200px){
-        max-width: 1013px;
+        width: 1013px;
         height: 430px; 
     }
 }
@@ -34,12 +34,12 @@
     }
 
 .gallery-conteiner__list{
-    // display: flex;
     flex-wrap: wrap;
     gap: 2.5px;
-    // margin-top: auto;
-    // margin-bottom: auto;
-    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
 
     @media screen and (max-width:767px){
         margin-top: 10px;
