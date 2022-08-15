@@ -1,0 +1,311 @@
+
+.products__title{
+    font-family: 'Titan One';
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    color: var( --text-lable-color);
+  
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 18px;
+      }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 26px;
+      }
+ 
+      @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        font-size: 30px;
+      }
+}
+
+.products__title-caption{
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: var(--text-btn-accent-color);
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 34px;
+      }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 48px;
+      }
+ 
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        font-size: 58px;
+      }
+}
+
+.products__list{
+    flex-wrap: wrap; 
+    display: flex;
+    gap: 16px;
+    display: -webkit-box;
+    
+}
+.products__section-cream::before{
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        content:url("/src/images/products/products-cream-mobile.png");
+        text-align: center;
+      }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .products__section-cream::before {
+          content:url("/src/images/products/products-cream-mobile@2x.png")
+        }
+      }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+       content:url("/src/images/products/products-cream-table.png");
+      text-align: center;
+      padding-top: 134px;
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .products__section-cream::before {
+          content:url("/src/images/products/products-cream-table@2x.png")
+        }
+      }
+
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        content:url("/src/images/products/products-cream-desktop.png");
+        text-align: center;  
+      }
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .products__section-cream::before {
+          content:url("/src/images/products/products-cream-desktop@2x.png")
+        }
+      }
+    }
+
+.products__section-coffee::before{
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        content:url("/src/images/products/products-coffee-mobile.png");
+        text-align: center;
+        }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .products__section-coffee::before {
+          content:url("/src/images/products/products-coffee-mobile@2x.png")
+        }
+      }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        content:url("/src/images/products/products-coffee-table.png");
+       text-align: center;
+       padding-top: 134px;
+     }
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+     .products__section-coffee::before {
+       content:url("/src/images/products/products-coffee-table@2x.png")
+     }
+   }
+     @media screen and (min-width: 1200px)  and (max-width: 1600px){
+         content:url("/src/images/products/products-coffee-desktop.png");
+         text-align: center;
+       }
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+     .products__section-coffee::before {
+       content:url("/src/images/products/products-coffee-desktop@2x.png")
+     }
+   }
+    }
+
+.products__section-milk::before{
+    @media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    content:url("/src/images/products/products-milk-mobile.png");
+    text-align: center; 
+  }
+  @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+     .products__section-milk::before {
+       content:url("/src/images/products/products-milk-mobile@2x.png")
+     }
+   }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        content:url("/src/images/products/products-milk-table.png");
+       text-align: center;
+       padding-top: 134px;
+     }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      .products__section-milk::before {
+       content:url("/src/images/products/products-milk-table@2x.png")
+     }
+    } 
+
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+         content:url("/src/images/products/products-milk-desktop.png");
+         text-align: center; 
+       }
+       @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+        .products__section-milk::before {
+           content:url("/src/images/products/products-milk-desktop@2x.png")
+        }
+     } 
+}  
+
+.products__input{
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+ 
+&-cream{
+    background-color: var(--bg-product1);
+}
+
+&-coffee{
+    background-color: var(--bg-product2);
+}
+
+&-milk{
+    background-color: var(--bg-product3);
+} 
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 280px;
+    height: 489px;
+    margin-top: -140px;
+  }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 224px;
+    height: 473px;
+    margin-top: -86px;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    width: 368px;
+    height: 535px;
+    margin-top: -133px;
+  }
+}
+
+.products__title-chapter {
+    text-align: center;
+    font-family: 'Titan One';
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-secondary-color);
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        font-size: 20px;
+        padding-top: 160px;
+      }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 20px;
+        padding-top: 118px;
+      }
+    
+      @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        font-size: 30px;
+        padding-top: 165px;
+      }
+}
+   
+.products__title-text{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary-color);
+
+    &:before{
+        content:url("/src/images/products/pseudo-element-group.svg");
+        display: block;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        line-height: 152%;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        line-height: 167%;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+    
+      @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        line-height: 167%;
+        font-size: 16px;
+        padding-left: 64px;
+        padding-right: 63px;
+      }
+}
+
+.products__title-text-visible{
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    display: none;
+  }
+}
+
+.products__btn{
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--text-btn-color);
+    border: 0px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+
+   &-icon{
+    width: 30px;
+    height: 12px;
+    fill: var(--bg-btn-accent-color);
+   }
+    
+   @media screen and (min-width: 320px) and (max-width: 767px) {
+    left: 120px;
+      
+  }
+
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 92px;
+    
+  }
+
+   @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    left: 160px;
+    margin-bottom: 60px;
+    width: 38,21px;
+    height: 40px;
+  }
+}
