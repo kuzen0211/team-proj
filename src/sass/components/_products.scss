@@ -7,6 +7,7 @@
     text-transform: uppercase;
     display: block;
     color: var( --text-lable-color);
+    -webkit-box-pack: center;
   
     @media screen and (min-width: 320px) and (max-width: 767px) {
         font-size: 18px;
@@ -29,6 +30,7 @@
     text-transform: uppercase;
     margin-bottom: 8px;
     color: var(--text-btn-accent-color);
+    -webkit-box-pack: center;
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
         font-size: 34px;
@@ -44,16 +46,18 @@
 }
 
 .products__list{
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     display: flex;
     gap: 16px;
     display: -webkit-box;
+    -webkit-box-pack: center;
     
 }
 .products__section-cream::before{
     @media screen and (min-width: 320px) and (max-width: 767px) {
         content:url("/src/images/products/products-cream-mobile.png");
         text-align: center;
+         
       }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -67,6 +71,7 @@
        content:url("/src/images/products/products-cream-table.png");
       text-align: center;
       padding-top: 134px;
+      
     }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -78,7 +83,8 @@
 
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
         content:url("/src/images/products/products-cream-desktop.png");
-        text-align: center;  
+        text-align: center;
+          
       }
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -106,6 +112,7 @@
         content:url("/src/images/products/products-coffee-table.png");
        text-align: center;
        padding-top: 134px;
+       
      }
      @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -117,6 +124,7 @@
      @media screen and (min-width: 1200px)  and (max-width: 1600px){
          content:url("/src/images/products/products-coffee-desktop.png");
          text-align: center;
+         
        }
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -146,6 +154,7 @@
         content:url("/src/images/products/products-milk-table.png");
        text-align: center;
        padding-top: 134px;
+       
      }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -158,6 +167,7 @@
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
          content:url("/src/images/products/products-milk-desktop.png");
          text-align: center; 
+         
        }
        @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
