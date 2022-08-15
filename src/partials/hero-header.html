@@ -61,7 +61,7 @@
     </nav>
   </div>
 </header>
-<script src="./js/menu.js"></script>
+<!-- <script src="./js/menu.js"></script> -->
 
 <!-- модалка -->
 <!-- <div data-modal class="backdrop is-hidden">
@@ -88,23 +88,60 @@
         </li>
       </ul>
       <div class="slider">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
-        vel aut magni optio delectus.
-      </p>
-      <button>
-        <svg class="arrow">
-          <use
-            class="icon-arrow-right"
-            width="26"
-            height="26"
-            href="./images/icons.svg#arrow-right"
-          ></use>
-        </svg>
-      </button>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/bio-eco.png    1x,
+              ./images/hero/bio-eco@2x.png 2x,
+              ./images/hero/bio-eco@3x.png 3x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/bio-eco-tab.png    1x,
+              ./images/hero/bio-eco-tab@2x.png 2x,
+              ./images/hero/bio-eco-tab@3x.png 3x
+            "
+          />
+          <img
+            class="slider__img"
+            src="./images/hero/bio-eco.png"
+            alt="Кувшин молока био-эко"
+            width="213"
+          />
+        </picture>
+        <div class="slider__readmore">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
+          vel aut magni optio delectus.
+          <details class="slider__meta">
+            <summary class="slider__short"></summary>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            quisquam. Vero, repellat temporibus velit dicta non et. Aut ipsum
+            cupiditate tempora quia, sequi libero non. Quam vero at
+            consequuntur! A enim error molestias reiciendis fugiat? Impedit hic
+            ab beatae a ea fugit tempora itaque architecto harum? Architecto,
+            aliquam. Temporibus, dolorum.
+          </details>
+        </div>
+        <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos pariatur
+          vel aut magni optio delectus.
+        </p>
+        <button>
+          <svg class="arrow">
+            <use
+              class="icon-arrow-right"
+              width="26"
+              height="26"
+              href="./images/icons.svg#arrow-right"
+            ></use>
+          </svg>
+        </button> -->
+      </div>
     </div>
-    </div>
-    
+
     <!-- объекты компании -->
     <aside class="counter">
       <ul class="counter__set">
@@ -146,13 +183,38 @@
         <img
           class="hero__mainimg"
           src="./images/hero/icecream-horn-desktop.png"
-          alt="Николай Тарасов"
+          alt="Рожок разноцветного мороженого"
           width="236"
         />
       </picture>
       <svg width="346" height="344" class="hero__big-circle">
         <use href="./images/icons.svg#big-circle"></use>
       </svg>
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/tasty.png    1x,
+            ./images/hero/tasty@2x.png 2x,
+            ./images/hero/tasty@3x.png 3x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/tasty-tab.png    1x,
+            ./images/hero/tasty-tab@2x.png 2x,
+            ./images/hero/tasty-tab@3x.png 3x
+          "
+        />
+
+        <img
+          class="hero__secondaryimg"
+          src="./images/hero/tasty.png"
+          alt="Барышня лижет мороженое>"
+          width="236"
+        />
+      </picture>
     </div>
   </div>
 </section>
