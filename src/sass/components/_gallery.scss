@@ -16,9 +16,21 @@
 }
 .gallary-conteiner__box{
     display: flex;
-    gap: 2.5px;
-    padding-left: 0;
-    padding-right: 0;
+    
+    justify-content: center;
+
+    @media screen and (max-width:767px){
+        padding-left: 0;
+        padding-right: 0; 
+        gap: 2.5px; 
+    }
+    @media screen and (min-width:768px){
+        gap: 6.07px;
+    }
+    @media screen and (min-width:1200px){
+        gap: 8px;
+    }
+
     }
 
 .gallery-conteiner__content{
