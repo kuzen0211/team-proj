@@ -1,0 +1,210 @@
+.btn {
+    display: flex;
+    align-items: baseline;
+    border: none;
+    border-radius: 22px;
+    background-color: var(--bg-btn-color);
+    font-weight: inherit;
+    line-height: inherit;
+    
+    color: var(--text-btn-accent-color);
+    &__txt {
+        padding: calc((44px - 21px) / 2) 13px;
+    }
+    &__icn {
+        fill: currentColor;
+        margin-left: 15px;
+    }
+    &:hover, &:focus {
+        background-color: var(--bg-btn-accent-color);
+        color: var(--text-btn-color);
+    }
+}
+
+.page-header {
+    background-color: var(--bg-product1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(21px/16px);
+    color: var(--text-secondary-color);
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        display: block;
+        margin: 8px 0;
+        min-width: 199px;
+    }
+}
+
+.page-header__btn-set {
+    z-index: 100;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column
+}
+
+.buy-btn {
+    @extend .btn;
+    display: none;
+    padding: 0 48px;
+    height: 44px;
+}
+
+.menu-btn {
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    background-color: transparent;
+    &.is-open ~ .buy-btn {
+        display: flex;
+        margin-top: 26px;
+    }
+    & .icon-cross {
+        display: none;
+    }
+    &.is-open .icon-cross {
+        display: block;
+        fill: var(--text-btn-color);
+    }
+    & .icon-burger {
+        display: block;
+        fill: var(--text-btn-accent-color);
+        margin-top: 7px;
+    }
+    &.is-open .icon-burger {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+    background-color: var(--bg-menu-color);
+    width: 250px;
+    height: 502px;
+    box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+    // padding: 123px 20px;
+    &__list {
+        display: block;
+        width: 100%;
+        margin-top: 123px;
+    }
+    &__item:first-child {
+        border-top: 1px solid #e18298;
+    }
+    &__item {
+        // display: flex;
+        // align-items: center;
+        height: 42px;
+        border-bottom: 1px solid #e18298;
+    }
+    &__link {        
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: calc((42px - 18px) / 2) 20px;
+
+        font-size: 14px;
+        line-height: calc(18px / 14px);
+        color: inherit;
+    }
+    &__link:hover,
+    &__link:focus {
+        color: var(--text-accent-color);
+    }
+}
+
+.menu.is-open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+}
+
+// ----------- секция герой
+
+.hero {
+    display: flex;
+
+    height: 436px;
+    background-color: var(--bg-product1);
+    color: var(--text-secondary-color);
+    .container {
+        position: relative;
+        // overflow: hidden;
+    }
+    // &__thumb {
+    //     position: relative;
+    //     z-index: 85;
+    // }
+    &__slogan {
+        position: relative;
+        z-index: 90;
+        display: flex;
+        flex-direction: column;
+        max-width: 220px;
+        @media screen and (min-width: 630px) {
+            max-width: 600px;
+        }
+        margin-top: 128px;
+        font-family: var(--font-family-secondary);
+        font-weight: 400;
+        font-size: 26px;
+        line-height: calc(30px / 26px);
+        letter-spacing: .04em;
+        text-transform: uppercase;
+    }
+    &__link-set {
+        position: relative;
+        z-index: 90;
+        display: flex;
+        gap: 8px;
+        margin-top: 20px;
+    }
+    &__link {
+        @extend .btn;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: calc(10px / 8px);
+        height: 24px;
+        padding: 7px 14px;
+
+    }
+    &__accent {
+        color: var(--text-accent-color);
+        font-size: 48px;
+        line-height: calc(46px / 48px);
+    }
+    &__mainimg {
+        position: absolute;
+        z-index: 80;
+        bottom: 0;
+        right: 34vw;
+        // height: 410px;
+        transform: translateX(50%);
+        width: 171;
+    }
+    &__slider, &__counter {
+        display: none;
+    }
+}
+
+.big-circle {
+    position: absolute;
+    z-index: 70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 346px;
+    height: 344px;
+    right: 32vw;
+    bottom: 75px;
+    transform: translatex(50%);
+    fill: var(--icon-accent-color);
+}
+
