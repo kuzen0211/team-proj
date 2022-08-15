@@ -1,5 +1,5 @@
     <section class="contacts-section section">
-        <div class="container">
+        <div class="contacts-container container">
             <h2 class="contacts-section__title visually-hidden">Contacts</h2>
             <ul class="contacts-section__list list">
                 <li class="contacts-section__item">
@@ -56,17 +56,21 @@
             </ul>
             <div class="contacts-section__buttons">
                 <button class="contacts-section__buttons-locations button" type="button" data-modal-open>Our Locations
-                    <!-- <svg class="button-locations__icon">
-                                    <use href="../images/symbol-defs.svg#icon-Vector-1"></use>
-                                </svg> -->
+                    <svg class="buttons__icon">
+                        <use href="./images/icons.svg#vector"></use>
+                    </svg>
                 </button>
-                <button class="contacts-section__buttons-franchise button" type="button">Franchise</button>
+                <button class="contacts-section__buttons-franchise button" type="button">Franchise
+                    <svg class="buttons__icon button__icon-franchise">
+                        <use href="./images/icons.svg#vector"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- <div class="backdrop" data-modal>
-        <div class="modal">
+    <div class="contacts-backdrop is-hidden" data-modal>
+        <div class="contacts-modal">
             <button class="modal__button-close" type="button" data-modal-close>X</button>
         </div>
-    </div> -->
+    </div>
