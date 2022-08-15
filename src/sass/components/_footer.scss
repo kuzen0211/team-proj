@@ -18,6 +18,12 @@
 
     max-width: 340px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+
+    max-width: 480px;
+  }
 }
 
 .footer__sublogo {
@@ -33,6 +39,12 @@
 
     padding-bottom: 12px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+
+    padding-bottom: 16px;
+  }
 }
 
 .footer__address {
@@ -43,6 +55,11 @@
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -57,6 +74,11 @@
 
   @media screen and (min-width: 768px) {
     padding: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 36px);
+    margin: auto;
   }
 }
 
