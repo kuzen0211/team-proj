@@ -300,13 +300,17 @@
 
     width: 280px;
     height: 412px;
-    background-color: #fff;
-    border-radius: 20%;
+    background-color: var(--bg-btn-accent-color);
+    border-radius: 10%;
     z-index: 40;
 }
 .modal__button-close {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
     border: 1px solid #000;
     border-radius: 50%;
+    cursor: pointer;
 }
