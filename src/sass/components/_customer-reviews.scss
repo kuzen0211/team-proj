@@ -13,13 +13,14 @@
         position: relative;
         text-align: center;
         line-height: 255%;
-        padding: 75px 50px 17px 50px;
+        padding: 43px 50px 17px 50px;
+        margin-top: 32px;
         background-color: #fafafa;
     }
 
     &__gradient {
         position: absolute;
-        bottom: 40px;
+        top: 58px;
         left: 50px;
         width: 180px;
         height: 269px;
@@ -69,19 +70,27 @@
         font: 500 12px/30.6px 'DM Sans';
     }
 
-    &__text::after{
-        content:url(/src/images/customer-reviews/group-red-circle.svg);
-        display: block;
-        margin-top: 16px;
-    }
+    // &__text::after{
+    //     content:url(/src/images/customer-reviews/group-red-circle.svg);
+    //     display: block;
+    //     margin-top: 16px;
+    // }
     
+    &__sign::before{
+        content: url(/src/images/customer-reviews/group-red-circle.svg);
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+
     &__sign{
         text-align: center;
     }
+
     &__sign::after{
         content:url(/src/images/customer-reviews/house-dots.svg);
         display: block;
-        margin-top: 24px;
+        margin-top: 20px;
     }
    
 }
