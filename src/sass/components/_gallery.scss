@@ -4,17 +4,16 @@
     padding-top: 30px;
     padding-bottom: 30px;
     
-
     @media screen and (max-width:767px){
-        width: 320px; 
+        max-width: 320px; 
         height: 136px; 
     }
     @media screen and (min-width:768px){
-        width: 768px;
+        max-width: 768px;
         height: 326px; 
     }
     @media screen and (min-width:1200px){
-        width: 1013px;
+        max-width: 1013px;
         height: 430px; 
     }
 }
@@ -24,7 +23,8 @@
     }
 
 .gallery-conteiner__content{
-        // display: flex;
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         gap: 2.5px;
