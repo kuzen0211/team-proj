@@ -26,26 +26,29 @@
     font-weight: 700;
     font-size: 16px;
     line-height: calc(21px/16px);
-    color: var(--text-secondary-color);
+    color: var(--text-secondary-color); 
     .container {
         display: flex;
-        align-items: center;
+        // align-items: center;
+        padding-top: 8px;
         justify-content: space-between;
-    }
-    .logo {
-        display: block;
-        margin: 8px 0;
-        min-width: 199px;
+        @media screen and (min-width: 768px) {
+            padding-top: 32px;
+            align-items: flex-start;
+        }
     }
 }
 
+.logo {
+    display: block;
+    width: 199px;
+}
+
 .page-header__btn-set {
-    z-index: 100;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+    // position: relative;
+    // z-index: 100;
     display: flex;
-    flex-direction: column
+    align-items: center
 }
 
 .buy-btn {
@@ -53,31 +56,71 @@
     display: none;
     padding: 0 48px;
     height: 44px;
+    @media screen and (min-width: 768px) {
+        padding: 0 37px;
+        display: flex;
+        margin-left: 32px;
+    }
+}
+
+.menu-btn.is-open ~ .buy-btn {
+    position: absolute;
+    z-index: 150;
+    display: flex;
+    top: 60px;
+    right: 20px;
+
+    @media screen and (min-width: 768px) {
+        right: 34px;
+        padding: 0 43px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .btn__txt {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .menu-btn.is-open ~ .buy-btn .btn__txt {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .btn__icn {
+        margin-left: 11px;
+    }
 }
 
 .menu-btn {
-    border: none;
-    padding: 0;
+    z-index: 200;
     margin-left: auto;
+    padding: 0;
+    border: none;
     background-color: transparent;
-    &.is-open ~ .buy-btn {
-        display: flex;
-        margin-top: 26px;
-    }
-    & .icon-cross {
-        display: none;
+    &.is-open {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        @media screen and (min-width: 768px){
+            right: 32px;
+        }
     }
     &.is-open .icon-cross {
         display: block;
         fill: var(--text-btn-color);
     }
-    & .icon-burger {
-        display: block;
-        fill: var(--text-btn-accent-color);
-        margin-top: 7px;
-    }
     &.is-open .icon-burger {
         display: none;
+    }
+}
+.icon-cross {
+    display: none;
+}
+.icon-burger {
+    display: block;
+    fill: var(--text-btn-accent-color);
+    @media screen and (min-width: 768px) {
+        margin-top: 0;
     }
 }
 
@@ -87,6 +130,11 @@
     width: 250px;
     height: 502px;
     box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 768px){
+        width: 254px;
+        height: 100%;
+    }
+    
     // padding: 123px 20px;
     &__list {
         display: block;
@@ -131,9 +179,12 @@
 .hero {
     display: flex;
 
-    height: 436px;
+    height: calc(502px - 50px - 8px);
     background-color: var(--bg-product1);
     color: var(--text-secondary-color);
+    @media screen and (min-width: 768px) {
+        height: calc(416px - 50px - 32px);
+    }
     .container {
         position: relative;
         // overflow: hidden;
@@ -148,10 +199,10 @@
         display: flex;
         flex-direction: column;
         max-width: 220px;
-        @media screen and (min-width: 630px) {
-            max-width: 600px;
-        }
-        margin-top: 128px;
+        // @media screen and (min-width: 630px) {
+        //     max-width: 600px;
+        // }
+        margin-top: 136px;
         font-family: var(--font-family-secondary);
         font-weight: 400;
         font-size: 26px;
@@ -187,24 +238,32 @@
         right: 34vw;
         // height: 410px;
         transform: translateX(50%);
-        width: 171;
+        width: 171px;
+        @media screen and (min-width: 768px) {
+            width: 143px;
+            right: 303px;
+            transform: none;
+        }
     }
     &__slider, &__counter {
         display: none;
     }
-}
+    &__big-circle {
+        position: absolute;
+        z-index: 70;
+        width: 346px;
+        height: 344px;
+        right: 32vw;
+        bottom: 75px;
+        transform: translatex(50%);
+        fill: var(--icon-accent-color);
 
-.big-circle {
-    position: absolute;
-    z-index: 70;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 346px;
-    height: 344px;
-    right: 32vw;
-    bottom: 75px;
-    transform: translatex(50%);
-    fill: var(--icon-accent-color);
+        @media screen and (min-width: 768px) {
+            width: 335px;
+            height: 333px;
+            bottom: 40px;
+            right: 185px;
+            transform: none;
+        }
+    }
 }
-
