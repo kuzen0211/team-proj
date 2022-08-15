@@ -3,7 +3,6 @@
     &__container-image{
         display: flex;
         justify-content: center;
-        padding-bottom: 75px;
     }
 
     &__image{
@@ -11,38 +10,69 @@
 
     
     &__text-container{
+        position: relative;
         text-align: center;
         line-height: 255%;
-        padding: 0 40;
+        padding: 75px 50px 17px 50px;
+        background-color: #fafafa;
+    }
+
+    &__gradient {
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+        width: 180px;
+        height: 269px;
+        font: 500 12px/30.6px 'DM Sans';
+        background-image: -webkit-repeating-linear-gradient(
+            top,
+            transparent 0px,
+            transparent 29.6px,
+            #e1e1e1 29.6px,
+            transparent 30.6px);
+        background-image: -moz-repeating-linear-gradient(
+            top,
+            transparent 0px,
+            transparent 29.6px,
+            #e1e1e1 29.6px,
+            transparent 30.6px);
+        background-image: -ms-repeating-linear-gradient(
+            top,
+            transparent 0px,
+            transparent 29.6px,
+            #e1e1e1 29.6px,
+            transparent 30.6px);
+        background-image: -o-repeating-linear-gradient(
+            top,
+            transparent 0px,
+            transparent 29.6px,
+            #e1e1e1 29.6px,
+            transparent 30.6px);
+        background-image: repeating-linear-gradient(
+            top,
+            transparent 0px,
+            transparent 29.6px,
+            #e1e1e1 29.6px,
+            transparent 30.6px);
     }
         
     &__text::before{
         content: url(/src/images/customer-reviews/quotes.svg);
-        margin-bottom: -45px;
-        margin-left: -150px;
+        margin-bottom: -38px;
+        margin-left: -125px;
         display: block;
-        }
+    }
     
     &__text{
-        display: inline;
-        background-repeat: no-repeat;
-        background-position: center bottom 1px;
-        background-size: 100% 1px;
-        background-image: repeating-linear-gradient(to right, #e1e1e1, #e1e1e1);
-        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 8px;
+        font: 500 12px/30.6px 'DM Sans';
     }
 
     &__text::after{
         content:url(/src/images/customer-reviews/group-red-circle.svg);
         display: block;
-        margin-bottom: 16px;
         margin-top: 16px;
-        // position: absolute;
-        // bottom: -16px;
-        // left: 50%;
-        // height: 4px;
-        // width: 32px;
-        // background-image: url('/src/images/customer-reviews/red-circle.svg');
     }
     
     &__sign{
