@@ -7,6 +7,10 @@
         background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 56%, #fff 44%);
     }
 
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 83%, #fff 17%);
+    }
+
     @media screen and (min-width: 768px) {
         &__list {
             display: flex;
@@ -15,7 +19,7 @@
     }
     &__item {
         padding: 40px 32px;
-        background-color: rgba(255, 255, 255, 1);
+        background-color: var(--bg-primery-color);
         border-radius: 30px;
         box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
         width: 100%;
@@ -28,6 +32,9 @@
         @media screen and (min-width: 768px) {
             width: calc((100% - 64px) / 3);
         }
+        @media screen and (min-width: 1200px) {
+            padding: 40px;
+        }
 
         &-category {
             display: table-cell;
@@ -38,7 +45,7 @@
             line-height: 1.86;
             letter-spacing: 0.04;
             text-align: center;
-            color: #fff;
+            color: var(--text-secondary-color);
             border-radius: 4px;
             height: 16px;
 
@@ -49,7 +56,7 @@
         }
         &-category--brown {
             width: 80px;
-            background-color: rgba(240, 209, 165, 1);
+            background-color: var(--bg-product2);
 
             @media screen and (min-width: 768px) {
                 width: 73px;
@@ -58,7 +65,7 @@
 
         &-category--green {
             width: 130px;
-            background-color: rgba(194, 226, 151, 1);
+            background-color: var(--bg-product3);
 
             @media screen and (min-width: 768px) {
                 width: 138px;
@@ -80,11 +87,12 @@
 
         &-locations {
            
-            background-color: rgba(212, 19, 66, 1);
-            color: rgba(255, 255, 255, 1);
+            background-color: var(--bg-button-color);
+            color: var(--text-btn-color);
             cursor: pointer;
             padding-right: 17px;
             padding-left: 17px;
+            width: 161px;
 
             &:hover {
                 background-color: var(--bg-btn-accent-color);
@@ -95,20 +103,43 @@
             }
             @media screen and (min-width: 768px) {
                 margin-right: 15px;
+                width: 191px;
+                padding-right: 35px;
+                padding-left: 30px;
             }
-            
+            @media screen and (min-width: 1200px) {
+                margin-right: 12px;
+                width: 198px;
+                padding-left: 35px;
+            }
+
         }
     
         &-franchise {
             color: var(--bg-button-color);
-            background-color: rgba(255, 255, 255, 1);
+            background-color: var(--bg-btn-color);
             padding-left: 32px;
             padding-right: 32px;
+            width: 161px;
 
             &:hover {
                 background-color: var(--bg-btn-hover);
             }
-        }
+
+            @media screen and (min-width: 768px) {
+                margin-right: 15px;
+                width: 174px;
+                padding-right: 38px;
+                padding-left: 37px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 12px;
+                width: 168px;
+                padding-right: 37px;
+                padding-left: 36px;
+            }
+}
        
     }
 
@@ -116,7 +147,8 @@
         padding-top: 24px;
 
         &--item {
-            color: rgba(144, 126, 130, 1);
+            display: block;
+            color: var(--text-contacts-color);
             font-family: DM Sans;
             font-weight: 500;
             font-size: 12px;
@@ -130,7 +162,11 @@
             @media screen and (min-width:768px) {
                 font-size: 14px;
             }
-    }
+            @media screen and (min-width:1200px) {
+                font-size: 16px;
+                line-height: 1.81;
+            }
+}
     }
 }
 
@@ -146,7 +182,7 @@
 .contacts-location {
     padding-top: 20;
     padding-bottom: 24px;
-    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    border-bottom: 1px solid var(--border-line-color);
 
     &__city {
         font-family: DM Sans;
@@ -154,10 +190,14 @@
         font-size: 12px;
         line-height: 1.83;
         letter-spacing: 0.04;
-        color: rgba(0, 0, 0, 1);
+        color: var(--text-primery-color);
 
         @media screen and (min-width:768px) {
         font-size: 14px;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
         }
 
     }
@@ -168,27 +208,36 @@
         font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.04;
-        color: rgba(144, 126, 130, 1);
+        color: var(--text-about-color);
 
         @media screen and (min-width:768px) {
             font-size: 14px;
+            margin-top: 12px;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            margin-top: 8px;
+            line-height: 1.85;
         }
     }
 }
 .working-schedule {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid rgba(225, 225, 225, 1);
+    border-bottom: 1px solid var(--border-line-color);
 
     &__days {
-        font-family: DM Sans;
         font-weight: 500;
         font-size: 12px;
         line-height: 1.83;
-        color: rgba(0, 0, 0, 1);
+        color: var(--text-primery-color);
 
         @media screen and (min-width:768px) {
             font-size: 14px;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
         }
 }
     &__hours {
@@ -196,21 +245,23 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 1.83;
-        color: rgba(255, 165, 186, 1);
+        color:var(--text-lable-color);
 
         @media screen and (min-width:768px) {
                 font-size: 14px;
-            }
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
     }
 }
 
 
 .button {
-    // position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 161px;
     height: 44px;
     border-radius: 22px;
     border: transparent;
@@ -218,11 +269,12 @@
     font-size: 16px;
     line-height: 1.3;
     outline: 0;
+
+    
 }
 .buttons__icon {
     width: 8px;
     height: 10px;
-
     stroke: var(--icon-color);
     fill: none;
 }
