@@ -21,12 +21,13 @@
             margin-top: 20px;
             margin-left: 74px;
             margin-right: 74px;
-
         }
 
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-            padding: 43px 50px 17px 50px;
-            margin-top: 32px;
+            padding: 20px 0px 36px 0px;
+            margin-top: 16px;
+            margin-left: 116px;
+            margin-right: 116px;
         }
     }
 
@@ -80,7 +81,11 @@
         }
         
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-
+            font: 500 16px/29.76px 'DM Sans';
+            top: 8px;
+            left: 60px;
+            width: 822px;
+            height: 109px;
         }
     }
         
@@ -99,7 +104,8 @@
         }
         
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-            
+            margin-bottom: -32px;
+            margin-left: -750px;
         }
     }
     
@@ -117,7 +123,9 @@
         }
         
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-
+            padding-left: 109px;
+            padding-right: 109px;
+            font: 500 16px/29.76px 'DM Sans';
         }
     }
     
@@ -128,23 +136,33 @@
         @media screen and (min-width: 320px) and (max-width: 767px) {
             margin-top: 8px;
             margin-bottom: 16px;
-            font: 500 14px/26.04px 'DM Sans'
         }
         
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-top: -8px;
             margin-bottom: 16px;
-            font: 500 16px/26.76px 'DM Sans'
         }
         
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-
+            margin-top: -8px;
+            margin-bottom: 16px;
         }
     }
 
     &__sign{
         text-align: center;
 
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            font: 500 14px/26.04px 'DM Sans'
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font: 500 16px/26.76px 'DM Sans'
+        }
+        
+        @media screen and (min-width: 1200px) and (max-width: 1600px) {
+            font: 500 20px/37.2px 'DM Sans'
+        }
     }
 
     &__sign::after{
@@ -159,7 +177,7 @@
         }
         
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
-
+            margin-top: 32px;
         }
     
     }
