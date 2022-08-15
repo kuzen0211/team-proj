@@ -1,7 +1,11 @@
 .contacts-section {
     padding-top: 0px;
-    padding-bottom: 40px;
-    background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 78%, #fff 15%);
+    padding-bottom: 0px;
+    background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 79%, #fff 21%);
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 56%, #fff 44%);
+    }
 
     @media screen and (min-width: 768px) {
         &__list {
@@ -75,9 +79,16 @@
         }
 
         &-locations {
+           
             background-color: rgba(212, 19, 66, 1);
             color: rgba(255, 255, 255, 1);
             cursor: pointer;
+            padding-right: 17px;
+            padding-left: 17px;
+
+            &:hover {
+                background-color: var(--bg-btn-accent-color);
+            }
 
             @media screen and (max-width: 767px) {
                 margin-bottom: 10px;
@@ -85,16 +96,20 @@
             @media screen and (min-width: 768px) {
                 margin-right: 15px;
             }
-            &__icon {
-                position: absolute;
-            }
+            
         }
     
-            &-franchise {
-                color: rgba(212, 19, 66, 1);
-                background-color: rgba(255, 255, 255, 1);
-            }
+        &-franchise {
+            color: var(--bg-button-color);
+            background-color: rgba(255, 255, 255, 1);
+            padding-left: 32px;
+            padding-right: 32px;
 
+            &:hover {
+                background-color: var(--bg-btn-hover);
+            }
+        }
+       
     }
 
     &__contacts {
@@ -107,6 +122,10 @@
             font-size: 12px;
             line-height: 1.5;
             text-decoration: none;
+
+            &:hover {
+                color: var(--text-btn-accent-color);
+            }
 
             @media screen and (min-width:768px) {
                 font-size: 14px;
@@ -187,7 +206,10 @@
 
 
 .button {
-    position: relative;
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 161px;
     height: 44px;
     border-radius: 22px;
@@ -196,6 +218,17 @@
     font-size: 16px;
     line-height: 1.3;
     outline: 0;
+}
+.buttons__icon {
+    width: 8px;
+    height: 10px;
+
+    stroke: var(--icon-color);
+    fill: none;
+}
+.button__icon-franchise {
+    stroke: var(--bg-btn-accent-color);
+    fill: none;
 }
 
 .contacts-backdrop {
