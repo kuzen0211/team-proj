@@ -7,6 +7,10 @@
         background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 56%, #fff 44%);
     }
 
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(to top, rgba(255, 245, 246, 1) 83%, #fff 17%);
+    }
+
     @media screen and (min-width: 768px) {
         &__list {
             display: flex;
@@ -27,6 +31,9 @@
     }
         @media screen and (min-width: 768px) {
             width: calc((100% - 64px) / 3);
+        }
+        @media screen and (min-width: 1200px) {
+            padding: 40px;
         }
 
         &-category {
@@ -85,6 +92,7 @@
             cursor: pointer;
             padding-right: 17px;
             padding-left: 17px;
+            width: 161px;
 
             &:hover {
                 background-color: var(--bg-btn-accent-color);
@@ -95,8 +103,16 @@
             }
             @media screen and (min-width: 768px) {
                 margin-right: 15px;
+                width: 191px;
+                padding-right: 35px;
+                padding-left: 30px;
             }
-            
+            @media screen and (min-width: 1200px) {
+                margin-right: 12px;
+                width: 198px;
+                padding-left: 35px;
+            }
+
         }
     
         &-franchise {
@@ -104,11 +120,26 @@
             background-color: rgba(255, 255, 255, 1);
             padding-left: 32px;
             padding-right: 32px;
+            width: 161px;
 
             &:hover {
                 background-color: var(--bg-btn-hover);
             }
-        }
+
+            @media screen and (min-width: 768px) {
+                margin-right: 15px;
+                width: 174px;
+                padding-right: 38px;
+                padding-left: 37px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 12px;
+                width: 168px;
+                padding-right: 37px;
+                padding-left: 36px;
+            }
+}
        
     }
 
@@ -130,7 +161,11 @@
             @media screen and (min-width:768px) {
                 font-size: 14px;
             }
-    }
+            @media screen and (min-width:1200px) {
+                font-size: 16px;
+                line-height: 1.81;
+            }
+}
     }
 }
 
@@ -159,6 +194,10 @@
         @media screen and (min-width:768px) {
         font-size: 14px;
         }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
 
     }
     &__description {
@@ -172,6 +211,12 @@
 
         @media screen and (min-width:768px) {
             font-size: 14px;
+            margin-top: 12px;
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            margin-top: 8px;
+            line-height: 1.85;
         }
     }
 }
@@ -190,6 +235,10 @@
         @media screen and (min-width:768px) {
             font-size: 14px;
         }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
 }
     &__hours {
         font-family: DM Sans;
@@ -200,17 +249,19 @@
 
         @media screen and (min-width:768px) {
                 font-size: 14px;
-            }
+        }
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+            line-height: 1.87;
+        }
     }
 }
 
 
 .button {
-    // position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 161px;
     height: 44px;
     border-radius: 22px;
     border: transparent;
@@ -218,11 +269,12 @@
     font-size: 16px;
     line-height: 1.3;
     outline: 0;
+
+    
 }
 .buttons__icon {
     width: 8px;
     height: 10px;
-
     stroke: var(--icon-color);
     fill: none;
 }
