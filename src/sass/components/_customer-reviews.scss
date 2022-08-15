@@ -1,0 +1,86 @@
+.customer-reviews {
+  &__container-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text-container {
+    position: relative;
+    text-align: center;
+    line-height: 255%;
+    padding: 75px 50px 17px 50px;
+    background-color: #fafafa;
+  }
+
+  &__gradient {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    width: 180px;
+    height: 269px;
+    font: 500 12px/30.6px 'DM Sans';
+    background-image: -webkit-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -moz-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -ms-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -o-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+  }
+
+  &__text::before {
+    content: url(/src/images/customer-reviews/quotes.svg);
+    margin-bottom: -38px;
+    margin-left: -125px;
+    display: block;
+  }
+
+  &__text {
+    padding-left: 15px;
+    padding-right: 8px;
+    font: 500 12px/30.6px 'DM Sans';
+  }
+
+  &__text::after {
+    content: url(/src/images/customer-reviews/group-red-circle.svg);
+    display: block;
+    margin-top: 16px;
+  }
+
+  &__sign {
+    text-align: center;
+  }
+  &__sign::after {
+    content: url(/src/images/customer-reviews/house-dots.svg);
+    display: block;
+    margin-top: 24px;
+  }
+}
