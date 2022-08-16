@@ -51,6 +51,7 @@
         align-content: center;
         margin-top: auto;
         margin-bottom: auto;
+
         @media screen and (max-width:767px){
             gap: 2.5px;
         }
@@ -61,7 +62,10 @@
             gap: 7.98px;
         }
     }
-
+    
+.gallery-conteiner__content--indent{
+    padding-top: 20px;
+}
 .gallery-conteiner__list{
     flex-wrap: wrap;
     
