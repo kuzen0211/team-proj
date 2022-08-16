@@ -38,31 +38,41 @@
 
   &__gradient {
     position: absolute;
-    background-image: -webkit-repeating-linear-gradient(top,
-        transparent 0px,
-        transparent 29.6px,
-        #e1e1e1 29.6px,
-        transparent 30.6px);
-    background-image: -moz-repeating-linear-gradient(top,
-        transparent 0px,
-        transparent 29.6px,
-        #e1e1e1 29.6px,
-        transparent 30.6px);
-    background-image: -ms-repeating-linear-gradient(top,
-        transparent 0px,
-        transparent 29.6px,
-        #e1e1e1 29.6px,
-        transparent 30.6px);
-    background-image: -o-repeating-linear-gradient(top,
-        transparent 0px,
-        transparent 29.6px,
-        #e1e1e1 29.6px,
-        transparent 30.6px);
-    background-image: repeating-linear-gradient(top,
-        transparent 0px,
-        transparent 29.6px,
-        #e1e1e1 29.6px,
-        transparent 30.6px);
+    background-image: -webkit-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -moz-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -ms-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: -o-repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
+    background-image: repeating-linear-gradient(
+      top,
+      transparent 0px,
+      transparent 29.6px,
+      #e1e1e1 29.6px,
+      transparent 30.6px
+    );
 
     @media screen and (min-width: 0px) and (max-width: 767px) {
       font: 500 12px/30.6px 'DM Sans';
@@ -152,15 +162,15 @@
     text-align: center;
 
     @media screen and (min-width: 0px) and (max-width: 767px) {
-      font: 500 14px/26.04px 'DM Sans'
+      font: 500 14px/26.04px 'DM Sans';
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font: 500 16px/26.76px 'DM Sans'
+      font: 500 16px/26.76px 'DM Sans';
     }
 
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
-      font: 500 20px/37.2px 'DM Sans'
+      font: 500 20px/37.2px 'DM Sans';
     }
   }
 
@@ -179,7 +189,5 @@
     @media screen and (min-width: 1200px) and (max-width: 1600px) {
       margin-top: 32px;
     }
-
   }
-
 }
