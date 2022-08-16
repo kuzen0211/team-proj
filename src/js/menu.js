@@ -5,11 +5,10 @@
   menuBtnRef.forEach(btn =>
     btn.addEventListener('click', event => {
       event.preventDefault();
-      const expanded =
-        menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
 
-      menuBtnRef.classList.toggle('is-open');
-      menuBtnRef.setAttribute('aria-expanded', !expanded);
+      btn.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', !expanded);
 
       mobileMenuRef.classList.toggle('is-open');
     })
