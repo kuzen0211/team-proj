@@ -35,11 +35,6 @@ summary {
     font-size: 16px;
     line-height: calc(21px/16px);
     color: var(--text-secondary-color);
-    @media screen and (min-width: 1200px) {
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .container {
         display: flex;
         // align-items: center;
@@ -249,9 +244,6 @@ summary {
     }
     @media screen and (min-width: 1200px) {
         height: calc(664px - 50px - 37px);
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
     }
     .container {
         position: relative;
