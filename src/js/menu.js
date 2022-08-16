@@ -1,6 +1,6 @@
 (() => {
-    const menuBtnRef = document.querySelector('.nav-menu-btn');
-    const mobileMenuRef = document.querySelector('.nav-menu');
+    const menuBtnRef = document.querySelector(".nav-menu-btn");
+    const mobileMenuRef = document.querySelector(".nav-menu");
 
     menuBtnRef.addEventListener("click", () => {
         const expanded =
@@ -13,40 +13,19 @@
     });
 })();
 
-// $('.nav-menu__item a').click(function () {
-//     $('.nav-menu.is-open').removeClass('is-open');
-// });
 
-// (() => {
-//   const refs = {
-//     MenuBtn: document.querySelector('.menu-btn'),
-//     menu: document.querySelector('.menu'),
-//     body: document.querySelector('body'),
-//   };
-
-//   refs.MenuBtn.addEventListener('click', toggleMenu);
-
-//   function toggleMenu() {
-//     refs.menu.classList.toggle('is-open');
-//     refs.body.classList.toggle('no-scroll');
-//   }
-// })();
-
-// $('.menu__link').click(function () {
-//   $('.menu.is-open').removeClass('is-open');
-// });
 
 
 // (() => {
 //   const refs = {
-//     openMenuBtn: document.querySelector('.menu__open-btn'),
-//     closeMenuBtn: document.querySelector('.menu__close-btn'),
-//     menu: document.querySelector('.mob-menu'),
+//     openMenuBtn: document.querySelector('.nav-menu-btn'),
+//     // closeMenuBtn: document.querySelector('.menu__close-btn'),
+//     menu: document.querySelector('.nav-menu'),
 //     body: document.querySelector('body'),
 //   };
 
 //   refs.openMenuBtn.addEventListener('click', toggleMenu);
-//   refs.closeMenuBtn.addEventListener('click', toggleMenu);
+// //   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
 //   function toggleMenu() {
 //     refs.menu.classList.toggle('is-open');
@@ -54,6 +33,6 @@
 //   }
 // })();
 
-// $('.mob-menu__item a').click(function () {
-//   $('.mob-menu.is-open').removeClass('is-open');
+// $('.nav-menu ul li a').click(function () {
+//   $('.nav-menu.is-open').removeClass('is-open');
 // });
