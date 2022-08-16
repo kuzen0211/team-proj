@@ -21,11 +21,8 @@
     text-align: center;
     line-height: 2.55;
     background-color: var(--bg-customer-color);
-
-    @media screen and (max-width: 767px) {
-      padding: 43px 50px 26px 50px;
-      margin-top: 32px;
-    }
+    padding: 43px 50px 26px 50px;
+    margin-top: 32px;
 
     @media screen and (min-width: 768px) {
       padding: 37px 0px 44px 0px;
@@ -43,6 +40,7 @@
   }
 
   &__gradient {
+    position: absolute;
     font-size: 14px;
     line-height: 2.1428571429;
     background-image: repeating-linear-gradient(
@@ -51,42 +49,43 @@
       #e1e1e1 0,
       #e1e1e1 30px
     );
-    position: absolute;
 
     @media screen and (max-width: 767px) {
-      font: 500 12px/30.6px 'DM Sans';
       top: 46px;
       bottom: 15px;
       width: calc(100% - 100px);
+      font: 500 12px/30.6px 'DM Sans';
     }
 
     @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 2.16;
-      letter-spacing: 0.04em;
       top: 33px;
       left: 6px;
       width: 608px;
       height: 108px;
+      font-size: 14px;
+      line-height: 2.16;
+      letter-spacing: 0.04em;
     }
 
     @media screen and (min-width: 1200px) {
-      font: 500 16px/29.76px 'DM Sans';
       top: 48px;
       left: 72px;
       width: 822px;
       height: 75px;
+      font: 500 16px/29.76px 'DM Sans';
     }
   }
 
   &__text-container::before {
-    content: url(/src/images/customer-reviews/quotes.svg);
+    content: '';
     position: absolute;
     z-index: 0;
     top: 30px;
     left: 53px;
     width: 54px;
     height: 40px;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/customer-reviews/quotes.svg);
 
     @media screen and (min-width: 768px) {
       top: 20px;
@@ -97,16 +96,15 @@
     @media screen and (min-width: 1200px) {
       top: 32px;
       left: 72px;
-      width: 60.35px;
     }
   }
 
   &__text {
+    position: relative;
+    z-index: 2;
     padding-left: 15px;
     padding-right: 8px;
     font: 500 12px/30.6px 'DM Sans';
-    position: relative;
-    z-index: 2;
 
     @media screen and (min-width: 768px) {
       padding-left: 50.71px;
@@ -123,7 +121,6 @@
 
   &__sign::before {
     content: '';
-    background-image: url(/src/images/customer-reviews/group-red-circle.svg);
     display: block;
     height: 4px;
     width: 32px;
@@ -131,6 +128,7 @@
     margin-top: 16px;
     margin-right: auto;
     margin-left: auto;
+    background-image: url(/src/images/customer-reviews/group-red-circle.svg);
 
     @media screen and (min-width: 768px) {
       margin-top: 4px;
