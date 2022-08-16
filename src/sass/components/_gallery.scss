@@ -88,14 +88,18 @@
     background-size: contain;
     width: auto;
     display: block;
+
     @media screen and (max-width:767px){
         border-radius: 8px;
+      
     }
     @media screen and (min-width:768px){
         border-radius: 20px;
+      
     }
     @media screen and (min-width:1200px){
         border-radius: 20px;
+       
     }
  
 }
