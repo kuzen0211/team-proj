@@ -3,16 +3,22 @@
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
     
     @media screen and (max-width:767px){
         width: 320px; 
+        top: -40px;
+
     }
     @media screen and (min-width:768px){
         width: 768px;
+        top: -90px;
     }
     @media screen and (min-width:1200px){
         width: 1013px;
+        top: -70px;
     }
+
 }
 .gallary-conteiner__box{
     display: flex;
