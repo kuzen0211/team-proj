@@ -1,9 +1,10 @@
 .customer-reviews {
-  @media screen and (min-width: 0px) and (max-width: 767px) {
-    max-width: 320px;
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 
   &__container-image {
+    display: block;
     display: flex;
     justify-content: center;
   }
@@ -11,14 +12,12 @@
   &__text-container {
     position: relative;
     text-align: center;
-    line-height: 255%;
-    background-color: #fafafa;
+    line-height: 2.55;
+    background-color: var(--bg-customer-color);
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      padding: 30px 0px 17px 0px;
+    @media screen and (max-width: 767px) {
+      padding: 43px 50px 26px 50px;
       margin-top: 32px;
-      margin-left: 50px;
-      margin-right: 50px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -28,7 +27,7 @@
       margin-right: 74px;
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       padding: 20px 0px 36px 0px;
       margin-top: 16px;
       margin-left: 116px;
@@ -39,46 +38,46 @@
   &__gradient {
     position: absolute;
     background-image: -webkit-repeating-linear-gradient(
-      90deg,
+      top,
       transparent 0px,
       transparent 29.6px,
       #e1e1e1 29.6px,
       transparent 30.6px
     );
     background-image: -moz-repeating-linear-gradient(
-      90deg,
+      top,
       transparent 0px,
       transparent 29.6px,
       #e1e1e1 29.6px,
       transparent 30.6px
     );
     background-image: -ms-repeating-linear-gradient(
-      90deg,
+      top,
       transparent 0px,
       transparent 29.6px,
       #e1e1e1 29.6px,
       transparent 30.6px
     );
     background-image: -o-repeating-linear-gradient(
-      90deg,
+      top,
       transparent 0px,
       transparent 29.6px,
       #e1e1e1 29.6px,
       transparent 30.6px
     );
     background-image: repeating-linear-gradient(
-      90deg,
+      top,
       transparent 0px,
       transparent 29.6px,
-      #e1e1e1 29.6px,
+      var(--bg-comma-color) 29.6px,
       transparent 30.6px
     );
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       font: 500 12px/30.6px 'DM Sans';
-      top: 45px;
-      width: 180px;
-      height: 269px;
+      top: 46px;
+      bottom: 15px;
+      width: calc(100% - 100px);
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -98,13 +97,16 @@
     }
   }
 
-  &__text::before {
+  &__text-container::before {
     content: url(/src/images/customer-reviews/quotes.svg);
-    display: block;
+    position: absolute;
+    z-index: 0;
+    // display: block;
+    // outline: solid 1px blue;
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-bottom: -38px;
-      margin-left: -125px;
+    @media screen and (max-width: 767px) {
+      top: 30px;
+      left: 53px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -112,7 +114,7 @@
       margin-left: -445px;
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-bottom: -32px;
       margin-left: -710px;
     }
@@ -122,7 +124,11 @@
     @media screen and (min-width: 0px) and (max-width: 767px) {
       padding-left: 15px;
       padding-right: 8px;
+
       font: 500 12px/30.6px 'DM Sans';
+      position: relative;
+      z-index: 1;
+      // outline: solid 1px red;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -139,13 +145,15 @@
   }
 
   &__sign::before {
-    content: url(/src/images/customer-reviews/group-red-circle.svg);
+    content: '';
+    background-image: url(/src/images/customer-reviews/group-red-circle.svg);
     display: block;
-
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-top: 8px;
-      margin-bottom: 16px;
-    }
+    height: 4px;
+    width: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-top: -8px;
@@ -175,12 +183,14 @@
   }
 
   &__sign::after {
-    content: url(/src/images/customer-reviews/house-dots.svg);
+    content: '';
+    background-image: url(/src/images/customer-reviews/house-dots.svg);
     display: block;
-
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-top: 20px;
-    }
+    height: 12px;
+    width: 72.4px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-top: 32px;
