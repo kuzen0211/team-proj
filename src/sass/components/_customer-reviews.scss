@@ -10,10 +10,11 @@
   }
 
   @media screen and (min-width: 0px) and (max-width: 767px) {
-    max-width: 320px;
+    width: 100%;
   }
 
   &__container-image {
+    display: block;
     display: flex;
     justify-content: center;
   }
@@ -21,68 +22,30 @@
   &__text-container {
     position: relative;
     text-align: center;
-    line-height: 255%;
-    background-color: #fafafa;
+    line-height: 2.55;
+    background-color: var(--bg-customer-color);
+    padding: 43px 50px 26px 50px;
+    margin-top: 32px;
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      padding: 30px 0px 17px 0px;
-      margin-top: 32px;
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding: 20px 0px 36px 0px;
+    @media screen and (min-width: 768px) {
+      padding: 37px 6px 44px 8px;
       margin-top: 20px;
-      margin-left: 74px;
-      margin-right: 74px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 620px;
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-      padding: 20px 0px 36px 0px;
+    @media screen and (min-width: 1200px) {
+      padding: 47px 0px 39px 0px;
       margin-top: 16px;
-      margin-left: 116px;
-      margin-right: 116px;
+      width: 968px;
+      padding-left: 72px;
+      padding-right: 74px;
     }
   }
 
   // &__gradient {
   //   position: absolute;
-  //   background-image: -webkit-repeating-linear-gradient(
-  //     90deg,
-  //     transparent 0px,
-  //     transparent 29.6px,
-  //     #e1e1e1 29.6px,
-  //     transparent 30.6px
-  //   );
-  //   background-image: -moz-repeating-linear-gradient(
-  //     90deg,
-  //     transparent 0px,
-  //     transparent 29.6px,
-  //     #e1e1e1 29.6px,
-  //     transparent 30.6px
-  //   );
-  //   background-image: -ms-repeating-linear-gradient(
-  //     90deg,
-  //     transparent 0px,
-  //     transparent 29.6px,
-  //     #e1e1e1 29.6px,
-  //     transparent 30.6px
-  //   );
-  //   background-image: -o-repeating-linear-gradient(
-  //     90deg,
-  //     transparent 0px,
-  //     transparent 29.6px,
-  //     #e1e1e1 29.6px,
-  //     transparent 30.6px
-  //   );
-  //   background-image: repeating-linear-gradient(
-  //     90deg,
-  //     transparent 0px,
-  //     transparent 29.6px,
-  //     #e1e1e1 29.6px,
-  //     transparent 30.6px
-  //   );
 
   //   @media screen and (min-width: 0px) and (max-width: 767px) {
   //     font: 500 12px/30.6px 'DM Sans';
@@ -108,23 +71,26 @@
   //   }
   // }
 
-  &__text::before {
-    content: url(/src/images/customer-reviews/quotes.svg);
-    display: block;
+  &__text-container::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: 53px;
+    width: 54px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/customer-reviews/quotes.svg);
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-bottom: -38px;
-      margin-left: -125px;
+    @media screen and (min-width: 768px) {
+      top: 20px;
+      left: 6px;
+      width: 60.35px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-bottom: -34px;
-      margin-left: -445px;
-    }
-
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-      margin-bottom: -32px;
-      margin-left: -710px;
+    @media screen and (min-width: 1200px) {
+      top: 32px;
+      left: 72px;
     }
   }
 
@@ -135,9 +101,7 @@
 
       position: relative;
       z-index: 2;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 2.14;
+      font: 500 12px/30.6px 'DM Sans';
       background-image: repeating-linear-gradient(
         hsla(0, 0%, 100%, 0),
         hsla(0, 0%, 100%, 0) 29px,
@@ -147,89 +111,62 @@
     }
 
     @media screen and (min-width: 768px) {
-      padding-left: 50px;
-      padding-right: 55px;
-
-      position: relative;
-      z-index: 2;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 2.4;
-      background-image: repeating-linear-gradient(
-        hsla(0, 0%, 100%, 0),
-        hsla(0, 0%, 100%, 0) 29px,
-        #e1e1e1 0,
-        #e1e1e1 30px
-      );
+      padding-left: 44.71px;
+      padding-right: 49.18px;
+      font: 500 14px/30.24px 'DM Sans';
     }
-
     @media screen and (min-width: 1200px) {
-      padding-left: 109px;
-      padding-right: 109px;
-
-      position: relative;
-      z-index: 2;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 2.4;
-      background-image: repeating-linear-gradient(
-        hsla(0, 0%, 100%, 0),
-        hsla(0, 0%, 100%, 0) 29px,
-        #e1e1e1 0,
-        #e1e1e1 30px
-      );
+      padding-left: 36px;
+      padding-right: 36px;
+      font: 500 16px/29.76px 'DM Sans';
     }
   }
 
   &__sign::before {
-    content: url(/src/images/customer-reviews/group-red-circle.svg);
+    content: '';
     display: block;
+    height: 4px;
+    width: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(/src/images/customer-reviews/group-red-circle.svg);
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-top: 8px;
+    @media screen and (min-width: 768px) {
+      margin-top: 4px;
       margin-bottom: 16px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-top: -8px;
-      margin-bottom: 16px;
-    }
-
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-      margin-top: -8px;
-      margin-bottom: 16px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 16px;
     }
   }
 
   &__sign {
     text-align: center;
+    font: 500 14px/26.04px 'DM Sans';
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      font: 500 14px/26.04px 'DM Sans';
+    @media screen and (min-width: 768px) {
+      font: 500 16px/29.76px 'DM Sans';
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font: 500 16px/26.76px 'DM Sans';
-    }
-
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       font: 500 20px/37.2px 'DM Sans';
     }
   }
 
   &__sign::after {
-    content: url(/src/images/customer-reviews/house-dots.svg);
+    content: '';
+    background-image: url(/src/images/customer-reviews/house-dots.svg);
     display: block;
+    height: 12px;
+    width: 72.4px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      margin-top: 20px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-top: 32px;
-    }
-
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 768px) {
       margin-top: 32px;
     }
   }
