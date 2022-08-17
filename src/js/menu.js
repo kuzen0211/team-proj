@@ -13,7 +13,7 @@
     mobileMenuRef.classList.toggle('is-open');
   };
 
-  menuLinksRef.forEach(btn => btn.addEventListener('click', handleClic));
+  menuLinksRef.forEach(btn => btn.addEventListener('click', handleClick));
 
   menuBtnRef.addEventListener('click', handleClick);
 })();
