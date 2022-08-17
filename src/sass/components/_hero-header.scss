@@ -146,9 +146,11 @@ summary {
     display: none;
   }
   &.is-open {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    @media screen and (max-width: 1199px){
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
     @media screen and (min-width: 768px) {
       right: 32px;
     }
@@ -217,11 +219,14 @@ summary {
     color: var(--text-accent-color);
   }
   &.is-open {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 99;
-    display: flex;
+    @media screen and (max-width: 1199px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      display: flex;
+    }
+    
   }
   &__item:first-child &__link {
     color: var(--text-accent-color);
