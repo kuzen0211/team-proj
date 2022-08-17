@@ -6,55 +6,19 @@
     rgba(255, 245, 246, 1) 79%,
     #fff 21%
   );
-
-  @media (-webkit-min-device-pixel-ratio: 2),
-    (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
       to top,
-      rgba(255, 245, 246, 1) 79%,
-      #fff 21%
+      rgba(255, 245, 246, 1) 56%,
+      #fff 44%
     );
   }
-
   @media screen and (min-width: 1200px) {
-    @media (-webkit-min-device-pixel-ratio: 2),
-      (min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx),
-      (min-resolution: 192dpi) {
-      background-image: linear-gradient(
-        to top,
-        rgba(255, 245, 246, 1) 83%,
-        #fff 17%
-      );
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    @media (-webkit-min-device-pixel-ratio: 2),
-      (min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx),
-      (min-resolution: 192dpi) {
-      background-image: linear-gradient(
-        to top,
-        rgba(255, 245, 246, 1) 56%,
-        #fff 44%
-      );
-    }
-  }
-
-  @media screen and (min-width: 320px) {
-    @media (-webkit-min-device-pixel-ratio: 2),
-      (min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx),
-      (min-resolution: 192dpi) {
-      background-image: linear-gradient(
-        to top,
-        rgba(255, 245, 246, 1) 79%,
-        #fff 21%
-      );
-    }
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 245, 246, 1) 83%,
+      #fff 17%
+    );
   }
 
   @media screen and (min-width: 768px) {
