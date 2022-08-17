@@ -267,17 +267,17 @@ summary {
     overflow: hidden;
     height: 664px;
     // height: calc(664px - 50px - 37px);
-    .bg-circle {
-      position: absolute;
-      bottom: 344px;
-      right: 416px;
-      transform: translate(50%, 50%);
-      display: block;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      border: 1px solid var(--bg-product1);
-    }
+    // .bg-circle {
+    //   position: absolute;
+    //   bottom: 344px;
+    //   right: 416px;
+    //   transform: translate(50%, 50%);
+    //   display: block;
+    //   border-radius: 50%;
+    //   width: 100px;
+    //   height: 100px;
+    //   border: 1px solid var(--bg-product1);
+    // }
   }
   .container {
     position: relative;
@@ -431,16 +431,18 @@ summary {
     }
   }
 }
-.n1 {
-  animation: hero-horn-bg-splash 3s ease-in 0.4s 1 reverse;
-  animation: bg-circle 3s ease-in 0.4s 1 reverse;
-}
-.n2 {
-  animation: bg-circle 3.6s ease-in 1.5s 1 reverse;
-}
-.n3 {
-  animation: bg-circle 4s ease-in 1.6s 1 reverse;
-}
+// @media screen and (min-width: 1200px) {
+// .n1 {
+//   animation: hero-horn-bg-splash 3s ease-in 0.4s 1 reverse;
+//   animation: bg-circle 3s ease-in 0.4s 1 reverse;
+// }
+// .n2 {
+//   animation: bg-circle 3.6s ease-in 1.5s 1 reverse;
+// }
+// .n3 {
+//   animation: bg-circle 4s ease-in 1.6s 1 reverse;
+// }
+// }
 .slider {
   display: none;
   @media screen and (min-width: 768px) {
