@@ -7,28 +7,54 @@
     #fff 21%
   );
 
-  @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to top,
-      rgba(255, 245, 246, 1) 83%,
-      #fff 17%
-    );
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to top,
-      rgba(255, 245, 246, 1) 56%,
-      #fff 44%
-    );
-  }
-
-  @media screen and (min-width: 320px) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     background-image: linear-gradient(
       to top,
       rgba(255, 245, 246, 1) 79%,
       #fff 21%
     );
+  }
+
+  @media screen and (min-width: 1200px) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 245, 246, 1) 83%,
+        #fff 17%
+      );
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 245, 246, 1) 56%,
+        #fff 44%
+      );
+    }
+  }
+
+  @media screen and (min-width: 320px) {
+    @media (-webkit-min-device-pixel-ratio: 2),
+      (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 245, 246, 1) 79%,
+        #fff 21%
+      );
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -139,6 +165,7 @@
       padding-left: 32px;
       padding-right: 32px;
       width: 161px;
+      cursor: pointer;
 
       &:hover {
         background-color: var(--bg-btn-hover);
@@ -311,10 +338,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 280px;
-  height: 412px;
-  background-color: var(--bg-btn-accent-color);
-  border-radius: 10%;
+  width: 400px;
+  height: 300px;
+  // background-color: var(--bg-btn-accent-color);
+  // border-radius: 10%;
   z-index: 40;
 }
 .modal__button-close {
@@ -326,4 +353,108 @@
   border: 1px solid #000;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.contacts-backdrop__franchise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 165, 186, 0.2);
+  z-index: 130;
+}
+.contacts-backdrop__modal-franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 412px;
+  background-color: var(--bg-btn-accent-color);
+  border-radius: 10%;
+  z-index: 120;
+  padding: 20px;
+  overflow: unset;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+.modal-franchise__button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-secondary-color);
+  background-color: var(--bg-btn-accent-color);
+  border: transparent;
+
+  &:hover {
+    background-color: var(--icon-accent-color);
+  }
+}
+
+.modal-franchise__title {
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--text-secondary-color);
+  text-align: center;
+}
+.modal-franchise-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-secondary-color);
+  padding: 15px 5px;
+}
+.franchise-form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+
+  @media screen and (min-width: 768px) {
+    padding: 13px 0px;
+  }
+}
+.button-submit {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+.franchise-form__label {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+  margin-bottom: 3px;
+}
+.franchise-form__input {
+  border-color: transparent;
+  border-radius: 5px;
+  color: var(--text-btn-accent-color);
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    height: 30px;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    color: var(--text-primery-color);
+  }
+
+  &:focus,
+  &:active {
+    background-color: var(--bg-btn-hover);
+  }
 }
