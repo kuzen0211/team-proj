@@ -7,7 +7,7 @@
 
     @media screen and (max-width:767px){
         // width: 320px; 
-        background-image: linear-gradient(to bottom, #fff5f6 18%, #fff 11%);
+        background-image: linear-gradient(to bottom, #fff5f6 22%, #fff 11%);
 
     }
     @media screen and (min-width:768px){
@@ -51,6 +51,7 @@
         align-content: center;
         margin-top: auto;
         margin-bottom: auto;
+
         @media screen and (max-width:767px){
             gap: 2.5px;
         }
@@ -62,6 +63,9 @@
         }
     }
 
+.gallery-conteiner__content--indent{
+    padding-top: 20px;
+}
 .gallery-conteiner__list{
     flex-wrap: wrap;
     
@@ -84,18 +88,26 @@
     
 }
 
+.gallery-conteiner__list--fix{
+    padding-top: 14px;
+}
+
 .picture{
     background-size: contain;
     width: auto;
     display: block;
+
     @media screen and (max-width:767px){
         border-radius: 8px;
+      
     }
     @media screen and (min-width:768px){
         border-radius: 20px;
+      
     }
     @media screen and (min-width:1200px){
         border-radius: 20px;
+       
     }
  
 }
