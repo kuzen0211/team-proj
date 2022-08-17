@@ -1,18 +1,23 @@
 (() => {
-  const menuBtnRef = document.querySelectorAll('.js-nav-menu-btn');
+  const menuBtnRef = document.querySelector('.nav-menu-btn');
   const mobileMenuRef = document.querySelector('.nav-menu');
+  const menuLinksRef = document.querySelectorAll('.js-nav-menu-link');
 
-  menuBtnRef.forEach(btn =>
+  menuLinksRef.forEach(btn =>
     btn.addEventListener('click', event => {
-      event.preventDefault();
-      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
-
-      btn.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', !expanded);
-
       mobileMenuRef.classList.toggle('is-open');
     })
   );
+
+  menuBtnRef.addEventListener('click', () => {
+    const expanded =
+      menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+    mobileMenuRef.classList.toggle('is-open');
+  });
 })();
 
 // (() => {
