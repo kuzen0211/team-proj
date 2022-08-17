@@ -46,67 +46,67 @@
     }
   }
 
-  &__gradient {
-    position: absolute;
-    background-image: -webkit-repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 29.6px,
-      #e1e1e1 29.6px,
-      transparent 30.6px
-    );
-    background-image: -moz-repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 29.6px,
-      #e1e1e1 29.6px,
-      transparent 30.6px
-    );
-    background-image: -ms-repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 29.6px,
-      #e1e1e1 29.6px,
-      transparent 30.6px
-    );
-    background-image: -o-repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 29.6px,
-      #e1e1e1 29.6px,
-      transparent 30.6px
-    );
-    background-image: repeating-linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 29.6px,
-      #e1e1e1 29.6px,
-      transparent 30.6px
-    );
+  // &__gradient {
+  //   position: absolute;
+  //   background-image: -webkit-repeating-linear-gradient(
+  //     90deg,
+  //     transparent 0px,
+  //     transparent 29.6px,
+  //     #e1e1e1 29.6px,
+  //     transparent 30.6px
+  //   );
+  //   background-image: -moz-repeating-linear-gradient(
+  //     90deg,
+  //     transparent 0px,
+  //     transparent 29.6px,
+  //     #e1e1e1 29.6px,
+  //     transparent 30.6px
+  //   );
+  //   background-image: -ms-repeating-linear-gradient(
+  //     90deg,
+  //     transparent 0px,
+  //     transparent 29.6px,
+  //     #e1e1e1 29.6px,
+  //     transparent 30.6px
+  //   );
+  //   background-image: -o-repeating-linear-gradient(
+  //     90deg,
+  //     transparent 0px,
+  //     transparent 29.6px,
+  //     #e1e1e1 29.6px,
+  //     transparent 30.6px
+  //   );
+  //   background-image: repeating-linear-gradient(
+  //     90deg,
+  //     transparent 0px,
+  //     transparent 29.6px,
+  //     #e1e1e1 29.6px,
+  //     transparent 30.6px
+  //   );
 
-    @media screen and (min-width: 0px) and (max-width: 767px) {
-      font: 500 12px/30.6px 'DM Sans';
-      top: 45px;
-      width: 180px;
-      height: 269px;
-    }
+  //   @media screen and (min-width: 0px) and (max-width: 767px) {
+  //     font: 500 12px/30.6px 'DM Sans';
+  //     top: 45px;
+  //     width: 180px;
+  //     height: 269px;
+  //   }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font: 500 14px/30.24px 'DM Sans';
-      top: 33px;
-      left: 6px;
-      width: 545px;
-      height: 109px;
-    }
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //     font: 500 14px/30.24px 'DM Sans';
+  //     top: 33px;
+  //     left: 6px;
+  //     width: 545px;
+  //     height: 109px;
+  //   }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-      font: 500 16px/29.76px 'DM Sans';
-      top: 8px;
-      left: 60px;
-      width: 822px;
-      height: 109px;
-    }
-  }
+  //   @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  //     font: 500 16px/29.76px 'DM Sans';
+  //     top: 8px;
+  //     left: 60px;
+  //     width: 822px;
+  //     height: 109px;
+  //   }
+  // }
 
   &__text::before {
     content: url(/src/images/customer-reviews/quotes.svg);
@@ -129,22 +129,55 @@
   }
 
   &__text {
-    @media screen and (min-width: 0px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) {
       padding-left: 15px;
       padding-right: 8px;
-      font: 500 12px/30.6px 'DM Sans';
+
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 2.14;
+      background-image: repeating-linear-gradient(
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 29px,
+        #e1e1e1 0,
+        #e1e1e1 30px
+      );
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) {
       padding-left: 50px;
       padding-right: 55px;
-      font: 500 14px/30.24px 'DM Sans';
+
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 2.4;
+      background-image: repeating-linear-gradient(
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 29px,
+        #e1e1e1 0,
+        #e1e1e1 30px
+      );
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       padding-left: 109px;
       padding-right: 109px;
-      font: 500 16px/29.76px 'DM Sans';
+
+      position: relative;
+      z-index: 2;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 2.4;
+      background-image: repeating-linear-gradient(
+        hsla(0, 0%, 100%, 0),
+        hsla(0, 0%, 100%, 0) 29px,
+        #e1e1e1 0,
+        #e1e1e1 30px
+      );
     }
   }
 
