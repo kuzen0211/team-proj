@@ -109,11 +109,13 @@ summary {
 }
 
 .nav-menu-btn.is-open ~ .buy-btn {
-  position: absolute;
-  z-index: 150;
-  display: flex;
-  top: 60px;
-  right: 20px;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    z-index: 150;
+    display: flex;
+    top: 60px;
+    right: 20px;
+  }
 
   @media screen and (min-width: 768px) {
     right: 34px;
